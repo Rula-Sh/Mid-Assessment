@@ -1,0 +1,31 @@
+<div class="mainGrid">
+  <app-sidebar
+    class="side"
+    (page)="getPageName($event)"
+    [userEmail]="userEmail"
+  ></app-sidebar>
+  @if(isLoggedIn){
+  <app-login
+    (user)="getUserToHeader($event)"
+    class="partialMain"
+    [ngStyle]="{ margin: '15px' }"
+  ></app-login>
+  } @else {
+  <div class="partialMain" [ngStyle]="{ margin: '15px' }">
+    @if(pageNameInMain === 'My Profile'){
+    <app-my-profile></app-my-profile>
+    } @else if(pageNameInMain === 'Contact Us'){
+    <app-contact-us></app-contact-us>
+    } @else if(pageNameInMain === 'About Us'){
+    <app-about-us></app-about-us>
+    } @else if(pageNameInMain === 'Add User'){
+    <app-add-user></app-add-user>
+    } @else if(pageNameInMain === 'Get Universities'){
+    <app-get-universities></app-get-universities>
+    } @else {
+    <p>Please Click on the Login Button to Continue</p>
+    }
+  </div>
+
+  }
+</div>

@@ -1,0 +1,27 @@
+<form class="container" (ngSubmit)="createUser()">
+  <input
+    type="text"
+    placeholder="username"
+    [(ngModel)]="user.username"
+    name="user.username"
+  />
+  <input
+    type="text"
+    placeholder=".email"
+    [(ngModel)]="user.email"
+    name="user.email"
+  />
+  <input
+    type="password"
+    placeholder="password"
+    [(ngModel)]="user.password"
+    name="user.password"
+  />
+  <input
+    type="password"
+    placeholder="confirmPassword"
+    [(ngModel)]="user.confirmPassword"
+    name="user.confirmPassword"
+  />
+  <button>Sign Up</button>
+</form>

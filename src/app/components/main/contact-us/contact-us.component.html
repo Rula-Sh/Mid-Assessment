@@ -1,0 +1,21 @@
+<form class="container" (ngSubmit)="submitForm()">
+  <input
+    type="text"
+    placeholder="contact.username"
+    [(ngModel)]="contact.username"
+    name="contact.username"
+  />
+  <input
+    type="text"
+    placeholder="contact.title"
+    [(ngModel)]="contact.title"
+    name="contact.title"
+  />
+  <input
+    type="text"
+    placeholder="contact.body"
+    [(ngModel)]="contact.body"
+    name="contact.body"
+  />
+  <button>Submit</button>
+</form>

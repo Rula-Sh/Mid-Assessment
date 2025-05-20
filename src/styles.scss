@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+margin: 0;
+padding: 0;
+width: 100%;
+overflow-x: hidden;
+box-sizing: border-box;
+}
+
+.container{
+    background-color: white;
+    border: #CBC3E3 solid 2px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 70%;
+}
+
+hr{
+    border: 1px black  solid;
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between ;
+}
+
+img{
+    margin: auto;
+    max-width: 75%;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}

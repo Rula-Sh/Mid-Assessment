@@ -1,0 +1,10 @@
+<div class="spaceBetween">
+  <p [ngStyle]="{ margin: 0 }">Hello {{ userEmail ? userEmail : "Guest" }}!</p>
+  <div>
+    <button>light Mode</button>
+    <button (click)="logging(loggedIn)">
+      {{ loggedIn ? "Login" : "Logout" }}
+    </button>
+  </div>
+</div>
+<hr />

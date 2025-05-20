@@ -1,0 +1,6 @@
+@if (isLoaded) { @for(uni of unis; track uni.name){
+<p>{{ uni.name }}</p>
+<a [href]="uni.domains[0]">{{ uni.domains[0] }}</a>
+} } @else {
+<p>loading</p>
+}
